@@ -15,6 +15,7 @@
 		D02F006B2277417D00771FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02F00692277417D00771FF5 /* LaunchScreen.storyboard */; };
 		D02F00762277417D00771FF5 /* CollectionViewGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02F00752277417D00771FF5 /* CollectionViewGridTests.swift */; };
 		D02F00812277417D00771FF5 /* CollectionViewGridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02F00802277417D00771FF5 /* CollectionViewGridUITests.swift */; };
+		D02F00902277500A00771FF5 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02F008F2277500A00771FF5 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D02F007C2277417D00771FF5 /* CollectionViewGridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02F00802277417D00771FF5 /* CollectionViewGridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewGridUITests.swift; sourceTree = "<group>"; };
 		D02F00822277417D00771FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D02F008F2277500A00771FF5 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		D02F005C2277417C00771FF5 /* CollectionViewGrid */ = {
 			isa = PBXGroup;
 			children = (
+				D02F008E22774FD300771FF5 /* Extensions */,
 				D02F005D2277417C00771FF5 /* AppDelegate.swift */,
 				D02F005F2277417C00771FF5 /* ViewController.swift */,
 				D02F00612277417C00771FF5 /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				D02F00822277417D00771FF5 /* Info.plist */,
 			);
 			path = CollectionViewGridUITests;
+			sourceTree = "<group>";
+		};
+		D02F008E22774FD300771FF5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D02F008F2277500A00771FF5 /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 				D02F00602277417C00771FF5 /* ViewController.swift in Sources */,
 				D02F005E2277417C00771FF5 /* AppDelegate.swift in Sources */,
 				D02F00662277417C00771FF5 /* CollectionViewGrid.xcdatamodeld in Sources */,
+				D02F00902277500A00771FF5 /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
