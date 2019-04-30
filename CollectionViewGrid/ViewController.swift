@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate  {
     
-    let intItems = 26
-    let intRows = 2
+    // To produce a chess board use:
+    // let intItems = 64
+    // let intRows = 8
+    
+    let intItems = 64
+    let intRows = 8
 
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
@@ -43,7 +47,23 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
 
-        cell.backgroundColor = UIColor.random
+        // cell.backgroundColor = UIColor.random
+        // Now a chequered pattern for example a chess board
+        let chessRow = Int(indexPath.item / 8)
+        if indexPath.item % 2 == 0  {
+            // if chessRow is even then start with white else dark
+            if chessRow % 2 == 0  {
+                cell.backgroundColor = UIColor.white
+            }else {
+                cell.backgroundColor = UIColor.darkGray
+            }
+        } else {
+            if chessRow % 2 == 0  {
+                cell.backgroundColor = UIColor.darkGray
+            }else {
+                cell.backgroundColor = UIColor.white
+            }
+        }
         return cell
     }
     
